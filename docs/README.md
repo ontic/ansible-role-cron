@@ -24,7 +24,7 @@ If the value remains omitted, the following packages will be installed by defaul
 
 | Debian/Ubuntu          | RedHat/CentOS           |
 | :--------------------- | :---------------------- |
-| cron                   | cron                    |
+| cron                   | cronie                  |
 
 ```
 cron_service_name:

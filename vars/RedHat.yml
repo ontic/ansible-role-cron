@@ -8,6 +8,6 @@
 ---
 
 cron_default_packages:
-  - name: 'cron'
+  - name: 'cronie'
 
 cron_default_service_name: 'crond'
