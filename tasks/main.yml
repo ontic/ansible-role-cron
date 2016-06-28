@@ -20,7 +20,7 @@
 
 - name: 'Cron | Define Cron service name.'
   set_fact:
-    nfs_service_name: '{{ cron_default_service_name }}'
+    cron_service_name: '{{ cron_default_service_name }}'
   when: '{{ not cron_service_name }}'
   tags:
     - 'cron'
@@ -33,7 +33,7 @@
 
 - name: 'Cron | Define Cron packages.'
   set_fact:
-    nfs_packages: '{{ cron_default_packages }}'
+    cron_packages: '{{ cron_default_packages }}'
   when: '{{ not cron_packages }}'
   tags:
     - 'cron'
