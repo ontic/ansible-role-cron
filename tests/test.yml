@@ -15,7 +15,7 @@
     cron_tasks:
       - name: 'list contents'
         job: 'ls -alh > /dev/null'
-        user: 'travis'
+        user: 'adam'
   roles:
     - { role: 'ontic.account' }
     - { role: 'role_under_test' }
