@@ -3,10 +3,11 @@
 
 ---
 
-- hosts: 'all'
+- hosts: 'localhost'
   vars:
     cron_tasks:
       - name: 'list contents'
         job: 'ls -alh > /dev/null'
+        user: 'travis'
   roles:
-    - { role: 'ontic.cron' }
+    - { role: 'role_under_test' }
