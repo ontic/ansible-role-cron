@@ -40,19 +40,19 @@
     - 'configure'
     - 'service'
 
-- include: 'package.yml'
+- import_tasks: 'package.yml'
   tags:
     - 'cron'
     - 'cron-package'
     - 'package'
 
-- include: 'configure.yml'
+- import_tasks: 'configure.yml'
   tags:
     - 'cron'
     - 'cron-configure'
     - 'configure'
 
-- include: 'service.yml'
+- import_tasks: 'service.yml'
   tags:
     - 'cron'
     - 'cron-service'
